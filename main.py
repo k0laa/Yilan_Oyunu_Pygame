@@ -52,9 +52,9 @@ def oyun():
 
 def ana_menu():
     while True:
-        ekran.fill(SIYAH)
+        ekran.fill(SIYAH)  # Arka plan rengi
         baslik_goster(ekran, "Yılan Oyunu")
-        if buton_goster(ekran, (100, 50), "Başla", GENISLIK // 2, YUKSEKLIK // 2):
+        if buton_goster(ekran, (100, 50), "Başla", GENISLIK // 2, YUKSEKLIK // 2, renk=MAVI):
             return
         pygame.display.update()
         for event in pygame.event.get():
@@ -65,12 +65,12 @@ def ana_menu():
 
 def oyun_bitti(skor):
     while True:
-        ekran.fill(SIYAH)
+        ekran.fill(SIYAH)  # Arka plan rengi
         baslik_goster(ekran, "Oyun Bitti")
         skor_goster(ekran, skor, ortala=True)
-        if buton_goster(ekran, (160, 40), "Tekrar Oyna", GENISLIK // 2, YUKSEKLIK // 2):
+        if buton_goster(ekran, (160, 40), "Tekrar Oyna", GENISLIK // 2, YUKSEKLIK // 2, renk=MAVI):
             return
-        if buton_goster(ekran, (100, 40), "Çıkış", GENISLIK // 2, YUKSEKLIK // 2 + 50):
+        if buton_goster(ekran, (100, 40), "Çıkış", GENISLIK // 2, YUKSEKLIK // 2 + 50, renk=KIRMIZI):
             pygame.quit()
             sys.exit()
         pygame.display.update()
@@ -85,3 +85,4 @@ while True:
     ana_menu()
     skor = oyun()
     oyun_bitti(skor)
+

@@ -12,4 +12,5 @@ def rastgele_yem(yilan):
             return x, y
 
 def yem_ciz(ekran, yem):
-    pygame.draw.rect(ekran, KIRMIZI, (*yem, KARE_BOYUTU, KARE_BOYUTU))
+    pygame.draw.rect(ekran, (255, 105, 97), (*yem, KARE_BOYUTU, KARE_BOYUTU))
+
