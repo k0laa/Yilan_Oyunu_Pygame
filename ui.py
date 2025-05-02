@@ -8,7 +8,7 @@ FONT = pygame.font.Font(None, 36)
 def skor_goster(ekran, skor, ortala=False):
     skor_yazi = FONT.render(f"Skor: {skor}", True, YESIL)
     if ortala:
-        ekran.blit(skor_yazi, (GENISLIK // 2 - skor_yazi.get_width() // 2, YUKSEKLIK // 2 - skor_yazi.get_height() // 2))
+        ekran.blit(skor_yazi, (GENISLIK // 2 - skor_yazi.get_width() // 2, 10))
     else:
         ekran.blit(skor_yazi, (10, 10))
 
