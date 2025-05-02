@@ -2,6 +2,7 @@ import pygame
 import random
 from settings import *
 
+
 def rastgele_yem(yilan):
     kolon = GENISLIK // KARE_BOYUTU
     satir = YUKSEKLIK // KARE_BOYUTU
@@ -11,6 +12,6 @@ def rastgele_yem(yilan):
         if (x, y) not in yilan:
             return x, y
 
-def yem_ciz(ekran, yem):
-    pygame.draw.rect(ekran, (255, 105, 97), (*yem, KARE_BOYUTU, KARE_BOYUTU))
 
+def yem_ciz(ekran, yem):
+    pygame.draw.rect(ekran, PASTEL_KIRMIZI, (*yem, KARE_BOYUTU, KARE_BOYUTU))

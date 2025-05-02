@@ -5,6 +5,8 @@ KIRMIZI = (239, 83, 80)  # Yem (pastel kırmızı)
 BEYAZ = (236, 239, 241)  # Yazılar (açık gri)
 GRI = (144, 164, 174)  # Buton kenarları (pastel gri)
 MAVI = (41, 121, 255)  # Butonlar (pastel mavi)
+PASTEL_YESIL = (119, 221, 119)
+PASTEL_KIRMIZI = (255, 105, 97)
 
 # Ayarlar
 KARE_BOYUTU = 10
