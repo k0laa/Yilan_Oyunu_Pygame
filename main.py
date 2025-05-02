@@ -51,6 +51,7 @@ def oyun():
         yilan_ciz(ekran, yilan)
         yem_ciz(ekran, yem)
         skor_goster(ekran, skor)
+        hiz_goster(ekran, FPS)
         pygame.display.update()
         saat.tick(FPS)
 

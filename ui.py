@@ -31,3 +31,7 @@ def buton_goster(ekran, rect, yazi, x, y, renk=MAVI):
         return True
     return False
 
+def hiz_goster(ekran , hiz):
+    hiz_yazi = FONT.render(f"Hız: {hiz}", True, BEYAZ)  # Yazı rengi
+    ekran.blit(hiz_yazi, (GENISLIK - hiz_yazi.get_width() - 10, 10))
+
