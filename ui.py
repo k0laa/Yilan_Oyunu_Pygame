@@ -15,7 +15,7 @@ def skor_goster(ekran, skor, ortala=False):
 
 def baslik_goster(ekran, yazi):
     baslik = FONT.render(yazi, True, BEYAZ)  # Yazı rengi
-    ekran.blit(baslik, (GENISLIK // 2 - baslik.get_width() // 2, 50))
+    ekran.blit(baslik, (GENISLIK // 2 - baslik.get_width() // 2, 80))
 
 
 def buton_goster(ekran, rect, yazi, x, y, renk=MAVI):

@@ -1,6 +1,4 @@
-import pygame
 import sys
-from settings import *
 from snake import *
 from food import *
 from ui import *
@@ -12,6 +10,7 @@ pygame.init()
 ekran = pygame.display.set_mode((GENISLIK, YUKSEKLIK))
 pygame.display.set_caption("Yılan Oyunu")
 saat = pygame.time.Clock()
+FPS = 10
 
 
 def oyun():
@@ -21,6 +20,7 @@ def oyun():
     yeni_yon = yon
     yem = rastgele_yem(yilan)
     skor = 0
+    hizlanma_kontrol = 0
 
     while True:
         for event in pygame.event.get():
@@ -41,6 +41,11 @@ def oyun():
 
         if bas in yilan[1:]:
             return skor  # Ölüm ekranına skor döndür
+
+        if hizlanma_kontrol + 5 == skor:
+            global FPS
+            FPS += 5
+            hizlanma_kontrol = skor
 
         ekran.fill(SIYAH)
         yilan_ciz(ekran, yilan)
@@ -85,4 +90,3 @@ while True:
     ana_menu()
     skor = oyun()
     oyun_bitti(skor)
-
