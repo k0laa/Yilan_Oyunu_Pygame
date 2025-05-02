@@ -54,15 +54,21 @@ Bu proje, **Pygame** kullanılarak geliştirilmiş klasik bir yılan oyunudur. O
 
 ```
 Yilan_Oyunu_Pygame/
+│   
+├── main.py              # Oyunu başlatan dosya
 │
-├── main.py          # Ana oyun dosyası
-├── settings.py      # Oyun ayarları ve renkler
-├── snake.py         # Yılan ile ilgili işlevler
-├── food.py          # Yem ile ilgili işlevler
-├── ui.py            # Kullanıcı arayüzü işlevleri
-├── README.md        # Proje açıklaması
-├── requirements.txt # Gerekli bağımlılıkların listesi
-└── images/          # Ekran görüntüleri ve diğer görseller
+├── core/                # Oyun mantığı ve işlevleri
+│   ├── game.py          # Ana oyun dosyası
+│   ├── settings.py      # Oyun ayarları ve renkler
+│   ├── snake.py         # Yılan ile ilgili işlevler
+│   ├── food.py          # Yem ile ilgili işlevler
+│   └── ui.py            # Kullanıcı arayüzü işlevleri
+│
+├── resources/           # Ekran görüntüleri ve diğer görseller
+│
+├── README.md            # Proje açıklaması
+├── requirements.txt     # Gerekli bağımlılıkların listesi
+└── LICENSE              # Lisans dosyası
 ```
 
 ## Katkıda Bulunma
