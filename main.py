@@ -10,7 +10,6 @@ pygame.init()
 ekran = pygame.display.set_mode((GENISLIK, YUKSEKLIK))
 pygame.display.set_caption("Yılan Oyunu")
 saat = pygame.time.Clock()
-FPS = 10
 
 
 def oyun():
@@ -21,6 +20,7 @@ def oyun():
     yem = rastgele_yem(yilan)
     skor = 0
     hizlanma_kontrol = 0
+    FPS = 10
 
     while True:
         for event in pygame.event.get():
@@ -43,7 +43,6 @@ def oyun():
             return skor  # Ölüm ekranına skor döndür
 
         if hizlanma_kontrol + 5 == skor:
-            global FPS
             FPS += 5
             hizlanma_kontrol = skor
 
