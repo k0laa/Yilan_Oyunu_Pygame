@@ -1,0 +1,10 @@
+# Renkler
+SIYAH = (0, 0, 0)
+YESIL = (0, 255, 0)
+KIRMIZI = (255, 0, 0)
+
+# Ayarlar
+KARE_BOYUTU = 10
+GENISLIK = 400
+YUKSEKLIK = 400
+FPS = 10
